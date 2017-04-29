@@ -8,6 +8,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Redis {
     private static final int costMillisconds = 100;
 
+
+
     /**
      * valueMap
      */
@@ -52,7 +54,7 @@ public class Redis {
             Thread.sleep(costMillisconds);
         } catch (InterruptedException e) {
             e.printStackTrace();
-            throw new RuntimeException("Redis 集群异常");
+            throw new RuntimeException("timeout ...");
         }
     }
 
